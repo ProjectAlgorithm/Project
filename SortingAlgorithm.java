@@ -228,8 +228,15 @@ public class SortingAlgorithm {
         quickSort(arr4, 0, arr4.length - 1);
         t2 = System.currentTimeMillis();
         System.out.println("Quick Sort: " + (t2 - t1) + " ms");
+    
+        int[] arr5 = original.clone();
+        t1 = System.currentTimeMillis();
+        quickSort(arr5, 0, arr5.length - 1);
+        t2 = System.currentTimeMillis();
+        System.out.println("Randomized QuickSort: " + (t2 - t1) + " ms");
     } 
 }
+
 
 
 
